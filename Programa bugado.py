@@ -1,10 +1,12 @@
-capital = float(input("Informe, em reais, seu capital: "))
-juros = float(input("Informe, em porcentagem, os juros: "))
-tempo = float(input("Informe, em meses, a duração da aplicação: "))
-montante = 0
-juros=juros/100
+t_termo = int(input("Informe o terceiro termo da PA: "))
+razão = int(input("Informe a razão: "))
+n = int(input("Informe o número de termos a serem descobertos, o valor deve ser maior que 3: "))
 contador = 0
-for contador < tempo:
-    contador+=1
-  montante = capital * ((1+juros)**contador)
-  print(f"Mês {contador}, montante = R${montante:.2f}")
+while n<=3:
+  n = int(input("Informe o número de termos a serem descobertos, o valor deve ser maior que 3: "))
+print("\nSegue o desenvolvimento da PA: ")
+print(t_termo - (2*razão))
+print(t_termo - razão)
+  contador += 1
+  PA = t_termo + (contador - 1) * razão
+  print(PA)
